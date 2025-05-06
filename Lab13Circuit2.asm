@@ -12,6 +12,7 @@
 ; D7:  Blue PB	 (external pull-down)
 ; D6:  Green PB	 (external pull-down)
 ; D5:  Red PB	 (external pull-down)
+; !! BLUE IS THE LONELY LEG
 
 ; any non-repeating tasks should occur outside of the loop
 ; configure D8, D9, D10 as an output pin
