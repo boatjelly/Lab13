@@ -5,14 +5,16 @@
 ; AUTHOR : 
 ;
 ; I/O pins
-; D2: a on 7 segment display
-; D3: b on 7 segment display
-; D4: c on 7 segment display
-; D5: d on 7 segment display
-; D6: e on 7 segment display
-; D7: f on 7 segment display
-; D8: g on 7 segment display
+; D1: a on 7 segment display
+; D2: b on 7 segment display
+; D3: c on 7 segment display
+; D4: d on 7 segment display
+; D5: e on 7 segment display
+; D6: f on 7 segment display
+; D7: g on 7 segment display
 ; Uses external resistors
+;
+; to do: add clear before each number changes
 
     LDI r16, 0xFF
     OUT 0x3D, r16
@@ -24,56 +26,55 @@
 
 loop:
     ; Display 0
-    LDI r16, 0x03
+    LDI r16, 0x80
     OUT 0x0B, r16
     CALL delay
 
     ; Display 1
-    LDI r16, 0x9F
+    LDI r16, 0xF2
     OUT 0x0B, r16
     CALL delay
 
     ; Display 2
-    LDI r16, 0x25
+    LDI r16, 0x48
     OUT 0x0B, r16
     CALL delay
 
     ; Display 3
-    LDI r16, 0x0D
+    LDI r16, 0x60
     OUT 0x0B, r16
     CALL delay
 
     ; Display 4
-    LDI r16, 0x99
+    LDI r16, 0x32
     OUT 0x0B, r16
     CALL delay
 
     ; Display 5
-    LDI r16, 0x49
+    LDI r16, 0x24
     OUT 0x0B, r16
     CALL delay
 
     ; Display 6
-    LDI r16, 0x41
+    LDI r16, 0x04
     OUT 0x0B, r16
     CALL delay
 
     ; Display 7
-    LDI r16, 0x1F
+    LDI r16, 0xF0
     OUT 0x0B, r16
     CALL delay
 
     ; Display 8
-    LDI r16, 0x01
+    LDI r16, 0x00
     OUT 0x0B, r16
     CALL delay
 
     ; Display 9
-    LDI r16, 0x09
+    LDI r16, 0x20
     OUT 0x0B, r16
     CALL delay
 
-    ; Repeat from beginning
     RJMP loop
 
 ; Assembly code auto-generated
