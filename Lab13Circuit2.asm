@@ -1,4 +1,4 @@
-;
+; Lab 13 Circuit 2
 ; This code turns on a color LED if its corresponding button is pressed
 ; Uses SBIS (Skip if Bit in I/O Register is Set)
 ; 
