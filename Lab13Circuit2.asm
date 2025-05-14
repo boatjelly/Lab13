@@ -6,9 +6,9 @@
 ; AUTHOR : 
 ;
 ; I/O pins
-; D10: (BLUE)   LED
-; D9:  (GREEN)  LED
-; D8:  (RED)    LED
+; D10: BLUE LED
+; D9:  GREEN LED
+; D8:  RED LED
 ; D7:  Blue PB
 ; D6:  Green PB
 ; D5:  Red PB
