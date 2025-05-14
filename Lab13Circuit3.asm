@@ -14,7 +14,6 @@
 ; D7: g on 7 segment display
 ; Uses external resistors
 ;
-; to do: add clear before each number changes
 
     LDI r16, 0xFF
     OUT 0x3D, r16
